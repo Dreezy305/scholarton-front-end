@@ -1,21 +1,6 @@
 import React from "react";
 import GIRLBOY from "../../assets/images/girl-boy.png";
-// import { ReactComponent as Learn } from "../../assets/svg/learn.svg";
 import "./about.css";
-
-type smallCardProps = {
-  icon: React.ReactNode;
-  text: string;
-};
-
-const smallCard = ({ icon, text }: smallCardProps) => {
-  return (
-    <div className="bg-white rounded-[20px] card-shadow flex flex-col items-center space-y-3 h-12 w-auto">
-      {icon}
-      <p>{text}</p>
-    </div>
-  );
-};
 
 const About = () => {
   return (
@@ -50,6 +35,8 @@ const About = () => {
               <span className="px-8">Login</span>
             </button>
           </div>
+
+          {/* <div>{smallCard()}</div> */}
         </div>
 
         <div className="mt-7 border-2 border-white rounded-tl-full rounded-tr-full flex items-center text-center">
