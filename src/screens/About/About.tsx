@@ -52,8 +52,8 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="mt-10 pt-8 mb-8">
-      <div className="container mx-auto flex flex-col md:flex-col lg:flex-row items-start justify-between space-x-20 md:mx-auto">
+    <section id="about" className="mt-10 pt-8 mb-8 overflow-hidden">
+      <div className="container mx-auto flex flex-col md:flex-col lg:flex-row items-start justify-between space-x-20 md:mx-auto overflow-hidden">
         <img src={Colleagues} alt="colleagues" className="middle" />
 
         <div className="flex flex-col about middle">
@@ -70,7 +70,7 @@ const About = () => {
             concept.
           </p>
           <button
-            className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer self-end"
+            className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer self-end mb-12"
             type="button"
           >
             <span className="px-6">Read more</span>
@@ -78,9 +78,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col-reverse md:flex-row lg:flex-row items-start justify-between space-x-24 py-7">
-        <div className="flex flex-col space-y-8 mt-5 py-7">
-          <h4 className="font-MontserratMedium font-medium text-3xl leading-snug flex flex-col mt-12">
+      <div className="container mx-auto flex flex-col-reverse md:flex-col-reverse lg:flex-row items-start justify-between space-x-24 py-7 overflow-hidden img">
+        <div className="flex flex-col space-y-8 mt-5 py-7 mid">
+          <h4 className="font-MontserratMedium font-medium md:text-2xl lg:text-3xl text-lg leading-snug flex flex-col mt-12 h4">
             Benefits of Scholarton Project Based Learning
           </h4>
           {benefitsDetails.map((item, i) => (
@@ -96,7 +96,7 @@ const About = () => {
           ))}
         </div>
 
-        <img src={GirlsPhone} alt="girls-phone" className="" />
+        <img src={GirlsPhone} alt="girls-phone" className="img" />
       </div>
     </section>
   );

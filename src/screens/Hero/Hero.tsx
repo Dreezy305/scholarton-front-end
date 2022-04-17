@@ -49,7 +49,7 @@ const Hero = () => {
               className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer"
               type="button"
             >
-              <span className="px-6">Get Started</span>
+              <span className="px-6 whitespace-nowrap">Get Started</span>
             </button>
             <button
               className="text-center rounded-full text-white px-5 py-3 bg-bgNavbar cursor-pointer"

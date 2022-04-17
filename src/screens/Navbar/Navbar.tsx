@@ -21,9 +21,9 @@ const Navbar = () => {
             <a href="#" className="hover:text-sky text-size">
               About
             </a>
-            <a href="#" className="hover:text-sky text-size">
-              Services
-            </a>
+            {/* <a href="#" className="hover:text-sky text-size">
+              How we work
+            </a> */}
             <a href="#" className="hover:text-sky text-size">
               Categories
             </a>
