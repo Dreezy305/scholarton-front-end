@@ -22,6 +22,8 @@ module.exports = {
         bgBlack: "#121212",
         sky: "#0369a1",
         bgNavbar: "#02182B",
+        title: "#02182B",
+        bgBlue: "#0197F6",
       },
       keyframes: {
         shake: {
