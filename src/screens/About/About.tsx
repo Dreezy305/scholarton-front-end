@@ -4,14 +4,18 @@ import GirlsPhone from "../../assets/images/girls-phone.png";
 import Graduate from "../../assets/images/graduate.png";
 import Runner from "../../assets/images/runner.png";
 import Share from "../../assets/images/share.png";
+// import { IconName } from "react-icons/fa";
 import Summary from "../../components/summary/Summary";
 import "./about.css";
 
 interface benefits {
   id: number;
   icon?: any;
-  title: string;
-  summary: string;
+  title?: string;
+  summary?: string;
+  bgColor?: any | string;
+  width?: string;
+  height?: string;
 }
 
 const About = () => {
@@ -21,6 +25,9 @@ const About = () => {
       icon: Graduate,
       title: "Student Centered",
       summary: "It promotes student centered learning",
+      bgColor: "#EFB7B9",
+      width: "36px",
+      height: "39px",
     },
     {
       id: 2,
@@ -28,13 +35,19 @@ const About = () => {
       title: "21st Century Skills",
       summary:
         "Scholarton has an array of projects that helps to develop 21st-century skills that are needed in solving the 21st century problems like communication, creativity and many more.",
+      bgColor: "#0197F6",
+      width: "40px",
+      height: "44px",
     },
     {
       id: 3,
       icon: Share,
       title: "Archive Projects",
       summary:
-        "Students  can archive their projects artifact on thier dashboard to review and revisit at any time from anywhere in the world. ",
+        "Students  can archive their projects artifact on thier dashboard to review and revisit at any time from anywhere in the world.",
+      bgColor: "#A544F2",
+      width: "40px",
+      height: "32px",
     },
   ];
 
@@ -65,22 +78,25 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col-reverse md:flex-row lg:flex-row items-start justify-between space-x-20">
-        <div className="flex flex-col space-y-8 mt-5">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row lg:flex-row items-start justify-between space-x-24 py-7">
+        <div className="flex flex-col space-y-8 mt-5 py-7">
           <h4 className="font-MontserratMedium font-medium text-3xl leading-snug flex flex-col mt-12">
             Benefits of Scholarton Project Based Learning
           </h4>
           {benefitsDetails.map((item, i) => (
             <Summary
+              key={item.id}
               icon={item.icon}
               title={item.title}
               summary={item.summary}
+              bgColor={item.bgColor}
+              width={item.width}
+              height={item.height}
             />
           ))}
         </div>
-        <div className="">
-          <img src={GirlsPhone} alt="girls-phone" className="mt-12" />
-        </div>
+
+        <img src={GirlsPhone} alt="girls-phone" className="" />
       </div>
     </section>
   );

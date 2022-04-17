@@ -24,6 +24,9 @@ module.exports = {
         bgNavbar: "#02182B",
         title: "#02182B",
         bgBlue: "#0197F6",
+        pink: "#EFB7B9",
+        skyBlue: "#0197F6",
+        lightPurple: "#A544F2",
       },
       keyframes: {
         shake: {
