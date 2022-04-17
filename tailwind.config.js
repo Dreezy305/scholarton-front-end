@@ -2,11 +2,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: "640px",
+      sm: "480px",
       md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+      lg: "976px",
+      xl: "1440px",
     },
     fontFamily: {
       MontserratBold: "Montserrat-Bold",
@@ -17,7 +16,13 @@ module.exports = {
       MontserratExtraLight: "Montserrat-ExtraLight",
     },
     extend: {
-      colors: { regularWhite: "#ffffff", bgRed: "#D7263D" },
+      colors: {
+        regularWhite: "#ffffff",
+        bgRed: "#D7263D",
+        bgBlack: "#121212",
+        sky: "#0369a1",
+        bgNavbar: "#02182B",
+      },
       keyframes: {
         shake: {
           "10%, 90%": {
