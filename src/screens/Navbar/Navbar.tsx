@@ -22,7 +22,7 @@ const Navbar = () => {
               About
             </a>
             <a href="#" className="hover:text-sky text-size">
-              How we work
+              Services
             </a>
             <a href="#" className="hover:text-sky text-size">
               Categories

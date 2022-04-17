@@ -6,4 +6,23 @@
   .adjust {
     margin: auto;
   }
+
+  .hero {
+    margin: auto !important;
+  }
+
+  .p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pad {
+    padding: 0px 10px;
+  }
+
+  .card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
 }

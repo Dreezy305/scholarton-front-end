@@ -21,23 +21,30 @@ const About = () => {
 
   return (
     <section id="about" className="bg-bgBlue pb-4 ">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row md:flex-row  items-center justify-between space-x-20 overflow-hidden ">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row md:flex-row items-center justify-between space-x-20 overflow-hidden pad md:justify-between">
         <div className="flex flex-col mt-12 pt-12 space-y-4 adjust">
-          <h1 className="text-title font-bold font-MontserratBold text-5xl flex-col  leading-snug">
+          <h1 className="text-title font-bold font-MontserratBold lg:text-5xl md:text-3xl text-xl flex-col  leading-snug">
             <span className="">PROJECT BASED </span>
             <span className="">LEARNING</span>
           </h1>
 
-          <h4 className="font-MontserratMedium font-medium text-4xl leading-7 text-title">
+          <h4 className="font-MontserratMedium font-medium lg:text-4xl md:text-4xl text-lg leading-7 text-title">
             More than projects...
           </h4>
 
-          <p className="text-title font-MontserratMedium font-medium text-xl leading-6">
+          <p className="text-title font-MontserratMedium font-medium lg:text-xl md:text-xl text-base leading-6 hidden">
             Systematically building students to become life <br />
             long learners and leaders
           </p>
+
+          {/* DISPLAYS ON MOBILE VIEWS */}
+          <p className="text-title font-MontserratMedium font-medium lg:text-xl md:text-xl text-base leading-6 p">
+            Systematically building students to become life long learners and
+            leaders
+          </p>
+
           {/* CTA buttons */}
-          <div className="flex flex-row space-x-4 pt-4 pb-5">
+          <div className="flex flex-row space-x-4 pt-4 pb-5 ">
             <button
               className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer"
               type="button"
@@ -52,7 +59,7 @@ const About = () => {
             </button>
           </div>
 
-          <div className="flex flex-row space-x-4 pt-12">
+          <div className="flex flex-wrap lg:flex-row md:flex-row  lg:space-x-4 md:pt-12 lg:pt-12 hero ">
             {cardDetails.map((item, i) => (
               <Card
                 type="FLASH"
@@ -66,7 +73,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-7 border-2 border-white rounded-tl-full rounded-tr-full flex items-center text-center adjust">
+        <div className="mt-7 border-2 border-white rounded-tl-full rounded-tr-full flex items-center text-center hero">
           <img src={GIRLBOY} alt="students" className="" />
         </div>
       </div>

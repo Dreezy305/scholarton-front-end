@@ -11,7 +11,7 @@ const Card = ({ icon, text, type }: smallCardProps) => {
   return (
     <>
       {type === "FLASH" && (
-        <div className="bg-white rounded-[20px] card-shadow flex flex-col items-center  h-32 w-32">
+        <div className="bg-white rounded-[20px] card-shadow flex flex-col items-center h-32 w-32 card ">
           {icon}
           <p className="pt-3">{text}</p>
         </div>
