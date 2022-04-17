@@ -1,5 +1,4 @@
 import React from "react";
-import Learn from "../../assets/svg/learn.svg";
 import "./card.css";
 
 type smallCardProps = {
@@ -12,9 +11,9 @@ const Card = ({ icon, text, type }: smallCardProps) => {
   return (
     <>
       {type === "FLASH" && (
-        <div className="bg-white rounded-[20px] card-shadow flex flex-col items-center space-y-3 h-12 w-auto">
+        <div className="bg-white rounded-[20px] card-shadow flex flex-col items-center  h-32 w-32">
           {icon}
-          <p>{text}</p>
+          <p className="pt-3">{text}</p>
         </div>
       )}
     </>
