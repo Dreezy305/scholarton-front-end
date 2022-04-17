@@ -4,7 +4,6 @@ import GirlsPhone from "../../assets/images/girls-phone.png";
 import Graduate from "../../assets/images/graduate.png";
 import Runner from "../../assets/images/runner.png";
 import Share from "../../assets/images/share.png";
-// import { IconName } from "react-icons/fa";
 import Summary from "../../components/summary/Summary";
 import "./about.css";
 
