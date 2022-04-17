@@ -1,82 +1,36 @@
 import React from "react";
-import GIRLBOY from "../../assets/images/girl-boy.png";
-import Learn from "../../assets/svg/learn.svg";
-import Build from "../../assets/svg/build.svg";
-import Lead from "../../assets/svg/lead.svg";
-import Card from "../../components/Card/Card";
+import Colleagues from "../../assets/images/colleagues.png";
 import "./about.css";
 
-interface flash {
-  component: any;
-  id: number;
-  text: string;
-}
-
 const About = () => {
-  const cardDetails: flash[] = [
-    { id: 1, component: Learn, text: "Learn" },
-    { id: 2, component: Build, text: "Build" },
-    { id: 3, component: Lead, text: "Lead" },
-  ];
-
   return (
-    <section id="about" className="bg-bgBlue pb-4 ">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row md:flex-row items-center justify-between space-x-20 overflow-hidden pad md:justify-between">
-        <div className="flex flex-col mt-12 pt-12 space-y-4 adjust">
-          <h1 className="text-title font-bold font-MontserratBold lg:text-5xl md:text-3xl text-xl flex-col  leading-snug">
-            <span className="">PROJECT BASED </span>
-            <span className="">LEARNING</span>
-          </h1>
+    <section id="about" className="mt-10 pt-8 flex flex-col space-y-8">
+      <div className="container mx-auto flex flex-col md:flex-col lg:flex-row items-start justify-between space-x-20 md:mx-auto">
+        <img src={Colleagues} alt="colleagues" className="middle" />
 
-          <h4 className="font-MontserratMedium font-medium lg:text-4xl md:text-4xl text-lg leading-7 text-title">
-            More than projects...
-          </h4>
-
-          <p className="text-title font-MontserratMedium font-medium lg:text-xl md:text-xl text-base leading-6 hidden">
-            Systematically building students to become life <br />
-            long learners and leaders
+        <div className="flex flex-col about middle">
+          <h6 className="text-center font-MontserratBold font-semibold text-4xl leading-10 my-8">
+            About
+          </h6>
+          <p className="text-justify w-full mb-5 font-medium font-MontserratRegular text-lg leading-10 pad">
+            Scholarton is an education-based platform that incorporates
+            project-based learning methodology into education, It is a learning
+            method which uses complex real world problems as the vehicle to
+            promote student learning of concepts and principles wrapped up in
+            the interdisciplinary student-centered activities with a clearly
+            defined project outcome as opposed to direct present of fact and
+            concept.
           </p>
-
-          {/* DISPLAYS ON MOBILE VIEWS */}
-          <p className="text-title font-MontserratMedium font-medium lg:text-xl md:text-xl text-base leading-6 p">
-            Systematically building students to become life long learners and
-            leaders
-          </p>
-
-          {/* CTA buttons */}
-          <div className="flex flex-row space-x-4 pt-4 pb-5 ">
-            <button
-              className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer"
-              type="button"
-            >
-              <span className="px-6">Get Started</span>
-            </button>
-            <button
-              className="text-center rounded-full text-white px-5 py-3 bg-bgNavbar cursor-pointer"
-              type="button"
-            >
-              <span className="px-8">Login</span>
-            </button>
-          </div>
-
-          <div className="flex flex-wrap lg:flex-row md:flex-row  lg:space-x-4 md:pt-12 lg:pt-12 hero ">
-            {cardDetails.map((item, i) => (
-              <Card
-                type="FLASH"
-                icon={
-                  <img src={item.component} alt={item.text} className="mt-4" />
-                }
-                text={item.text}
-                key={item.id}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-7 border-2 border-white rounded-tl-full rounded-tr-full flex items-center text-center hero">
-          <img src={GIRLBOY} alt="students" className="" />
+          <button
+            className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer self-end"
+            type="button"
+          >
+            <span className="px-6">Read more</span>
+          </button>
         </div>
       </div>
+
+      {/* <div className="container mx-auto flex flex-col md:flex-row lg:flex-row items-start justify-between space-x-20"></div> */}
     </section>
   );
 };

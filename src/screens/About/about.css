@@ -1,28 +1,16 @@
-.card-shadow {
-  box-shadow: 0px 4px 4px rgba(1, 151, 246, 0.25);
+@media screen and (max-width: 600px) {
+  .about {
+    margin: auto !important;
+    padding: 0px 20px !important;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  .adjust {
-    margin: auto;
-  }
-
-  .hero {
+@media screen and (max-width: 1024px) {
+  .middle {
     margin: auto !important;
   }
 
-  .p {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .pad {
-    padding: 0px 10px;
-  }
-
-  .card {
-    margin-bottom: 10px;
-    margin-right: 10px;
+    padding: 0px 20px !important;
   }
 }

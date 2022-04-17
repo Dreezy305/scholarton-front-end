@@ -1,3 +1,9 @@
+.card-shadow {
+  box-shadow: 1px 1px 25px 20px rgba(1, 151, 246, 0.84);
+  -webkit-box-shadow: 1px 1px 25px 20px rgba(1, 151, 246, 0.84);
+  -moz-box-shadow: 1px 1px 25px 20px rgba(1, 151, 246, 0.84);
+}
+
 @media screen and (max-width: 600px) {
   .card {
     margin-bottom: 10px;
@@ -10,3 +16,9 @@
     padding-right: 10px !important;
   }
 }
+
+/* @media screen and (max-width: 1024px) {
+  .card {
+    padding-right: 10px !important;
+  }
+} */
