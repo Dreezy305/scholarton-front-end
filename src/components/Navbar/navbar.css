@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+  .hide-menu {
+    display: none !important;
+  }
+
+  .menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-size {
+    font-size: 15px !important;
+    display: none;
+  }
+  .menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text-size {
+    font-size: 15px !important;
+    display: none;
+  }
+  .menu {
+    display: block !important;
+  }
+}
