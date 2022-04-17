@@ -73,7 +73,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-7 border-2 border-white rounded-tl-full rounded-tr-full flex items-center text-center hero">
+        <div className="mt-7  flex items-center text-center hero">
           <img src={GIRLBOY} alt="students" className="" />
         </div>
       </div>
