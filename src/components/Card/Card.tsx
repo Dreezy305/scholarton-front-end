@@ -4,7 +4,7 @@ import "./card.css";
 type CardProps = {
   icon?: React.ReactNode;
   text?: string;
-  type?: string | "FLASH" | "CATEGORY" | "PROJECT";
+  type?: string;
   baseText?: string;
 };
 
@@ -36,6 +36,18 @@ const Card = ({ icon, text, type, baseText }: CardProps) => {
       )}
 
       {type === "PROJECT" && (
+        <div className="bg-lightBg rounded-[30px] flex flex-col px-4 space-y-4  h-80 card-shadow items-center relative">
+          {icon}
+          <p className="absolute bottom-14 font-MontserratMedium font-medium text-base leading-7 text-center">
+            {text}
+          </p>
+          <span className="absolute bottom-4 right-7 text-right text-skyBlue font-MontserratRegular font-normal">
+            {baseText}
+          </span>
+        </div>
+      )}
+
+      {type === "BLOG" && (
         <div className="bg-lightBg rounded-[30px] flex flex-col px-4 space-y-4  h-80 card-shadow items-center relative">
           {icon}
           <p className="absolute bottom-14 font-MontserratMedium font-medium text-base leading-7 text-center">
