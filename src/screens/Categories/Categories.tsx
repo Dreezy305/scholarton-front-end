@@ -2,6 +2,8 @@ import React from "react";
 import "./categories.css";
 import Card from "../../components/Card/Card";
 import Maths from "../../assets/images/mathematics.png";
+import Online from "../../assets/images/online.png";
+import Teacher from "../../assets/images/teacher.png";
 
 const Categories = () => {
   return (
@@ -14,7 +16,7 @@ const Categories = () => {
           Build projects in line with your passion
         </p>
 
-        <div className="grid grid-cols-3 gap-8 px-8 pb-8">
+        <div className="grid grid-cols-3 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3">
           {[1, 2, 3, 4, 5, 6].map(() => (
             <Card
               type="CATEGORY"
