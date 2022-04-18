@@ -4,7 +4,7 @@ import "./card.css";
 type CardProps = {
   icon?: React.ReactNode;
   text?: string;
-  type?: string;
+  type?: string | "FLASH" | "CATEGORY" | "PROJECT";
   baseText?: string;
 };
 
