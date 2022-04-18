@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={Logo} alt="scholarton_logo" className="cursor-pointer" />
           </div>
 
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center justify-between space">
             <ul className="flex flex-row items-center justify-between space-x-12">
               <li className="cursor-pointer">
                 <img src={InstaGram} alt="" className="" />
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="border-2 border-skyBlue px-6 py-3 items-center text-center">
+          <div className="border-2 border-skyBlue px-6 py-3 items-center text-center space">
             <span className="text-center text-white font-MontserratMedium font-medium text-base leading-6 cursor-pointer">
               +2348034643978
             </span>
