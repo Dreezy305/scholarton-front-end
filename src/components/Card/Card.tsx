@@ -1,18 +1,13 @@
 import React from "react";
 import "./card.css";
 
-type smallCardProps = {
+type CardProps = {
   icon?: React.ReactNode;
   text?: string;
   type?: string;
 };
 
-type categoryCardProps = {
-  image?: React.ReactNode;
-  title?: string;
-};
-
-const Card = ({ icon, text, type }: smallCardProps) => {
+const Card = ({ icon, text, type }: CardProps) => {
   return (
     <>
       {type === "FLASH" && (

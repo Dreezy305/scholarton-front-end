@@ -51,7 +51,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="mt-10 pt-8 mb-8 overflow-hidden">
+    <section id="about" className="mt-10 pt-8 mb-8 overflow-hidden mt-12">
       <div className="container mx-auto flex flex-col md:flex-col lg:flex-row items-start justify-between space-x-20 md:mx-auto overflow-hidden">
         <img src={Colleagues} alt="colleagues" className="middle" />
 

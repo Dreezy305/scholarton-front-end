@@ -9,7 +9,7 @@ import "./how.css";
 
 const How = () => {
   return (
-    <section id="how-we-work" className="overflow-hidden">
+    <section id="how-we-work" className="overflow-hidden mt-12">
       <div className="flex flex-col container mx-auto overflow-hidden mb-7 pb-7">
         <h3 className="font-MontserratMedium font-semibold lg:text-4xl md:text-3xl text-2xl leading-10 mb-10 text-center">
           How we work

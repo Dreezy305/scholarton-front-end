@@ -22,7 +22,7 @@ const Categories = () => {
   ];
 
   return (
-    <section id="categories" className="pb-8">
+    <section id="categories" className="pb-8 mb-12">
       <div className="container mx-auto bg-lightBg rounded-[100px] h-auto w-auto px-8 py-8 border sides">
         <h4 className="text-title font-MontserratMedium font-semibold lg:text-3xl md:text-2xl text-xl leading-10 text-center pt-5">
           Our Categories
