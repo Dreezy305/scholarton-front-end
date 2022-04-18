@@ -20,7 +20,7 @@ const Contact = () => {
               <input
                 type={"text"}
                 value={sub}
-                className="px-3 py-6 border-2 border-skyBlue rounded-[20px] outline-none shadow-none absolute top-0 left-0 w-full"
+                className="px-3 py-6 border-2 border-skyBlue rounded-[20px] outline-none shadow-none absolute top-0 left-0 w-full bg-lightBg"
                 placeholder="Send Your email address"
                 id="subscribe"
                 name="subscribe"
