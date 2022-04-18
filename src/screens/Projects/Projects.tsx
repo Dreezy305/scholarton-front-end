@@ -1,5 +1,8 @@
 import React from "react";
 import Card from "../../components/Card/Card";
+import Creativity from "../../assets/images/creativity.png";
+import Stem from "../../assets/images/stem.png";
+import Efcc from "../../assets/images/efcc.png";
 
 const Projects = () => {
   return (
@@ -14,7 +17,36 @@ const Projects = () => {
         </p>
 
         <div className="grid grid-cols-1 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2">
-          <Card type="PROJECT" icon={<></>} />
+          <Card
+            type="PROJECT"
+            icon={
+              <img
+                src={Creativity}
+                alt="creativity"
+                className="absolute bottom-36"
+              />
+            }
+            text="Create an artist work to express your mood"
+            baseText="CREATIVITY"
+          />
+
+          <Card
+            type="PROJECT"
+            icon={
+              <img src={Stem} alt="creativity" className="absolute bottom-36" />
+            }
+            text="Build a robotic toy car"
+            baseText="STEM"
+          />
+
+          <Card
+            type="PROJECT"
+            icon={
+              <img src={Efcc} alt="creativity" className="absolute bottom-36" />
+            }
+            text="Develop a policy to curb cyber fraudster"
+            baseText="CIVIL"
+          />
         </div>
       </div>
     </section>
