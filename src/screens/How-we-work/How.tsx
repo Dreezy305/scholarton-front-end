@@ -15,8 +15,8 @@ const How = () => {
           How we work
         </h3>
         {/* STEPS */}
-        <div className="flex flex-col md:flex-row lg:flex-row items-center md:justify-between lg:justify-between pb-5 mb-5 bg-Img space-y-8 md:items-center md:px-10">
-          <div className="flex flex-col text-center items-center  space-y-7 h-full">
+        <div className="flex flex-col md:flex-row lg:flex-row items-center md:justify-between lg:justify-between pb-5 mb-5 bg-Img space-y-8 md:items-center lg:items-center md:px-10">
+          <div className="flex flex-col text-center items-center  space-y-7 ">
             <div
               className="border border-skyBlue rounded-full flex items-center text-center justify-center px-6 py-6 h-28 w-28"
               style={{ borderRadius: "100%" }}
@@ -31,7 +31,7 @@ const How = () => {
 
           {/* <img src={Chord1} alt="grad_2" className="" /> */}
 
-          <div className="flex flex-col text-center items-center space-y-7 h-full">
+          <div className="flex flex-col text-center items-center space-y-7">
             <div
               className="border border-skyBlue rounded-full flex items-center text-center  justify-center px-6 py-6 h-28 w-28"
               style={{ borderRadius: "100%" }}
@@ -46,7 +46,7 @@ const How = () => {
 
           {/* <img src={Chord2} alt="grad_2" className="" /> */}
 
-          <div className="flex flex-col text-center items-center space-y-7 h-full">
+          <div className="flex flex-col text-center items-center space-y-7">
             <div
               className="border border-skyBlue rounded-full flex items-center justify-center text-center px-6 py-6 h-28 w-28"
               style={{ borderRadius: "100%" }}
