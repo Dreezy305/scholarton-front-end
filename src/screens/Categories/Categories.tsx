@@ -5,8 +5,8 @@ import Maths from "../../assets/images/mathematics.png";
 
 const Categories = () => {
   return (
-    <section>
-      <div className="container mx-auto bg-lightBg rounded-[10px] h-auto w-auto">
+    <section id="categories" className="pb-8">
+      <div className="container mx-auto bg-lightBg rounded-[100px] h-auto w-auto px-8 py-8 border">
         <h4 className="text-title font-MontserratMedium font-semibold lg:text-3xl md:text-2xl text-xl leading-10 text-center pt-5">
           Our Categories
         </h4>
@@ -14,7 +14,7 @@ const Categories = () => {
           Build projects in line with your passion
         </p>
 
-        <div className="flex flex-row pb-5 mx-5 justify-evenly">
+        <div className="grid grid-cols-3 gap-8 px-8 pb-8">
           {[1, 2, 3, 4, 5, 6].map(() => (
             <Card
               type="CATEGORY"
