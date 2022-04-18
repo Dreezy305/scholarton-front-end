@@ -16,8 +16,8 @@ const Blog = () => {
         </p>
 
         <div className="grid grid-cols-1 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2">
-          <Card
-            type="PROJECT"
+          {/* <Card
+            type="BLOG"
             icon={
               <img
                 src={Rectangle29}
@@ -27,10 +27,10 @@ const Blog = () => {
             }
             text="Project Based Learning"
             baseText="Danjuma Femi"
-          />
+          /> */}
 
-          <Card
-            type="PROJECT"
+          {/* <Card
+            type="BLOG"
             icon={
               <img
                 src={Rectangle42}
@@ -40,10 +40,10 @@ const Blog = () => {
             }
             text="Developing 21st Cenutry Skills"
             baseText="Adeosun Bisi"
-          />
+          /> */}
 
-          <Card
-            type="PROJECT"
+          {/* <Card
+            type="BLOG"
             icon={
               <img
                 src={Rectangle47}
@@ -53,7 +53,7 @@ const Blog = () => {
             }
             text="Developing 21st Cenutry Skills"
             baseText="Adeosun Bisi"
-          />
+          /> */}
         </div>
       </div>
     </section>
