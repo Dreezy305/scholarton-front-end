@@ -5,7 +5,22 @@ import Maths from "../../assets/images/mathematics.png";
 import Online from "../../assets/images/online.png";
 import Teacher from "../../assets/images/teacher.png";
 
+interface categoryProps {
+  id: number;
+  text: string;
+  icon: any;
+}
+
 const Categories = () => {
+  const category: categoryProps[] = [
+    { id: 1, text: "Art and Creativity", icon: Maths },
+    { id: 2, text: "Business ", icon: Online },
+    { id: 3, text: "Civic ", icon: Teacher },
+    { id: 4, text: "Health and Environment", icon: Maths },
+    { id: 5, text: "Lifestyle", icon: Teacher },
+    { id: 6, text: "STEM", icon: Online },
+  ];
+
   return (
     <section id="categories" className="pb-8">
       <div className="container mx-auto bg-lightBg rounded-[100px] h-auto w-auto px-8 py-8 border">
@@ -17,11 +32,18 @@ const Categories = () => {
         </p>
 
         <div className="grid grid-cols-3 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3">
-          {[1, 2, 3, 4, 5, 6].map(() => (
+          {category.map((item, i) => (
             <Card
               type="CATEGORY"
-              icon={<img src={Maths} alt="Art_and_creativity" className="" />}
-              text=" Art and Creativity"
+              icon={
+                <img
+                  src={item.icon}
+                  alt={item.text}
+                  className="absolute bottom-36"
+                />
+              }
+              text={item.text}
+              key={item.id}
             />
           ))}
         </div>
