@@ -1,5 +1,6 @@
 import React from "react";
 import "./categories.css";
+import Card from "../../components/Card/Card";
 
 const Categories = () => {
   return (
@@ -12,7 +13,9 @@ const Categories = () => {
           Build projects in line with your passion
         </p>
 
-        <div className="flex flex-row"></div>
+        <div className="flex flex-row">
+          <Card type="CATEGORY" />
+        </div>
       </div>
     </section>
   );
