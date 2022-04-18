@@ -8,6 +8,7 @@ import Categories from "./screens/Categories/Categories";
 import Projects from "./screens/Projects/Projects";
 // import Blog from "./screens/Blog/Blog";
 import Contact from "./screens/Get-in-Touch/Contact";
+import Footer from "./screens/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Categories />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }
