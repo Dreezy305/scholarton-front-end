@@ -31,7 +31,7 @@ const Categories = () => {
           Build projects in line with your passion
         </p>
 
-        <div className="grid grid-cols-3 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2">
           {category.map((item, i) => (
             <Card
               type="CATEGORY"
