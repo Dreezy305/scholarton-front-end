@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../../components/Card/Card";
 
 const Projects = () => {
   return (
@@ -11,6 +12,10 @@ const Projects = () => {
           learn, build and become a leader with our project based learning
           curriculum
         </p>
+
+        <div className="grid grid-cols-1 gap-8 px-8 pb-8 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2">
+          <Card type="PROJECT" icon={<></>} />
+        </div>
       </div>
     </section>
   );

@@ -5,9 +5,10 @@ type CardProps = {
   icon?: React.ReactNode;
   text?: string;
   type?: string;
+  baseText?: string;
 };
 
-const Card = ({ icon, text, type }: CardProps) => {
+const Card = ({ icon, text, type, baseText }: CardProps) => {
   return (
     <>
       {type === "FLASH" && (
@@ -31,6 +32,18 @@ const Card = ({ icon, text, type }: CardProps) => {
           >
             Tell me more
           </button>
+        </div>
+      )}
+
+      {type === "PROJECT" && (
+        <div className="bg-lightBg rounded-[30px] flex flex-col px-4 space-y-4 items-center text-center h-80 card-shadow relative">
+          {icon}
+          <p className="absolute bottom-20 font-MontserratMedium font-medium text-base leading-7">
+            {text}
+          </p>
+          <p className="absolute bottom-4 text-right text-skyBlue">
+            {baseText}
+          </p>
         </div>
       )}
     </>
