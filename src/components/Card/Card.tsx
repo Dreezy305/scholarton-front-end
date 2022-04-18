@@ -18,6 +18,10 @@ const Card = ({ icon, text, type }: smallCardProps) => {
           </p>
         </div>
       )}
+
+      {type === "CATEGORY" && (
+        <div className="bg-white rounded-[30px] flex flex-col"></div>
+      )}
     </>
   );
 };

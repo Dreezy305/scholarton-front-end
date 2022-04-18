@@ -27,6 +27,7 @@ module.exports = {
         pink: "#EFB7B9",
         skyBlue: "#0197F6",
         lightPurple: "#A544F2",
+        lightBg: "#F4F8FB",
       },
       keyframes: {
         shake: {
