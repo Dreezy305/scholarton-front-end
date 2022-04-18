@@ -10,7 +10,8 @@
   .pos {
     position: absolute !important;
     top: 100px !important;
-    width: 93%;
+    width: 95%;
+    left: 3%;
   }
 }
 
