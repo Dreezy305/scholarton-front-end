@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./contact.css";
 
 const Contact = () => {
   const [sub, setSub] = useState("");
@@ -6,7 +7,7 @@ const Contact = () => {
   return (
     <section id="contact" className="mt-12 mb-12 pb-8">
       <div className="container mx-auto flex flex-col items-center">
-        <div className="bg-white rounded-[80px] px-4 py-4 flex flex-col items-center border w-3/4 relative h-64">
+        <div className="bg-white rounded-[80px] px-4 py-4 flex flex-col items-center border w-3/4 relative h-64 ">
           <h4 className="text-title font-MontserratMedium font-semibold lg:text-3xl md:text-2xl text-xl leading-10 text-center pt-5">
             Get in Touch
           </h4>
@@ -15,7 +16,7 @@ const Contact = () => {
             Subcribe to our inspiring newsletter
           </p>
 
-          <form className="w-4/5 relative items-center">
+          <form className="w-4/5 relative items-center hider">
             <div className=" w-4/5 items-center">
               <input
                 type={"text"}
@@ -28,7 +29,7 @@ const Contact = () => {
               />
 
               <button
-                className="text-white text-center px-6 py-4 bg-skyBlue rounded-[12px]  cursor-pointer absolute right-2 top-[9px] z-20"
+                className="text-white text-center px-6 py-4 bg-skyBlue rounded-[12px]  cursor-pointer absolute right-2 top-[9.5px] z-20"
                 type="button"
               >
                 Subscribe
