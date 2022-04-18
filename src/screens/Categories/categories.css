@@ -1,0 +1,5 @@
+@media screen and (max-width: 600px) {
+  .sides {
+    margin: 0px 15px !important;
+  }
+}
