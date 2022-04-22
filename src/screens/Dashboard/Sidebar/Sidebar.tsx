@@ -12,7 +12,7 @@ const Sidebar = () => {
         </p>
       </div>
 
-      <div className="mx-auto lg:text-left lg:px-10 lg:flex-col lg:items-center lg:py-7 lg:space-y-8">
+      <div className="mx-auto lg:text-left lg:px-14 lg:flex-col lg:items-center lg:py-7 lg:space-y-8">
         <ul className="lg:py-7 lg:flex-col lg:space-y-8 lg:items-start">
           <li className="cursor-pointer hover:bg-bgBlue hover:text-white font-MontserratMedium font-medium text-base leading-5 text-white ">
             Home Page
