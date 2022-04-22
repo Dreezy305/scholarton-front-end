@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className="flex-[0.5] items-center bg-bgNavbar lg:h-screen lg:overflow-hidden">
       <div className="lg:flex lg:flex-col lg:items-start lg:px-9 lg:pt-5 lg:space-y-3">
-        <img src={Avatar} alt="avatar" className="h-164 w-16 pt-4 ml-5" />
+        <img src={Avatar} alt="avatar" className="h-164 w-16 pt-4 lg:ml-8" />
 
         <p className="text-white text-left font-MontserratMedium font-medium">
           Ifeoluwa Olagbemi
