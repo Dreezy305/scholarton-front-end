@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import GIRLBOY from "../../assets/images/girl-boy.png";
 import Learn from "../../assets/svg/learn.svg";
 import Build from "../../assets/svg/build.svg";
@@ -45,18 +46,22 @@ const Hero = () => {
 
           {/* CTA buttons */}
           <div className="flex flex-row space-x-4 pt-4 pb-5 ">
-            <button
-              className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer"
-              type="button"
-            >
-              <span className="px-6 whitespace-nowrap">Get Started</span>
-            </button>
-            <button
-              className="text-center rounded-full text-white px-5 py-3 bg-bgNavbar cursor-pointer"
-              type="button"
-            >
-              <span className="px-8">Login</span>
-            </button>
+            <Link to={"/sign-up"}>
+              <button
+                className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer"
+                type="button"
+              >
+                <span className="px-6 whitespace-nowrap">Get Started</span>
+              </button>
+            </Link>
+            <Link to={"/login"}>
+              <button
+                className="text-center rounded-full text-white px-5 py-3 bg-bgNavbar cursor-pointer"
+                type="button"
+              >
+                <span className="px-8">Login</span>
+              </button>
+            </Link>
           </div>
 
           <div className="flex flex-wrap lg:flex-row md:flex-row  lg:space-x-4 md:pt-12 lg:pt-12 hero ">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -18,28 +19,28 @@ const Navbar = () => {
           </div>
           {/* MENU  */}
           <div className="md:flex space-x-6 text-regularWhite font-medium font-MontserratMedium text-base leading-5 hidden items-center ">
-            <a href="#" className="hover:text-sky text-size">
+            <Link to="/about" className="hover:text-sky text-size">
               About
-            </a>
+            </Link>
             {/* <a href="#" className="hover:text-sky text-size">
               How we work
             </a> */}
-            <a href="#" className="hover:text-sky text-size">
+            <Link to="/categories" className="hover:text-sky text-size">
               Categories
-            </a>
-            <a href="#" className="hover:text-sky text-size">
+            </Link>
+            <Link to="/projects" className="hover:text-sky text-size">
               Projects
-            </a>
-            <a href="#" className="hover:text-sky text-size">
+            </Link>
+            <Link to="/blog" className="hover:text-sky text-size">
               Blog
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link
+              to="/sign-up"
               className="rounded-full p-3 pt-3 text-white px-6 text-center bg-bgRed border border-bgRed baseline hover:bg-rose-600 hover:text-sky font-MontserratMedium font-medium text-base leading-5"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           {/* get started */}
