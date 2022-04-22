@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="flex flex-row space-x-4 pt-4 pb-5 ">
             <Link to={"/sign-up"}>
               <button
-                className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer"
+                className="text-center rounded-full text-white px-5 py-3 bg-bgRed cursor-pointer font-MontserratMedium"
                 type="button"
               >
                 <span className="px-6 whitespace-nowrap">Get Started</span>
@@ -56,7 +56,7 @@ const Hero = () => {
             </Link>
             <Link to={"/login"}>
               <button
-                className="text-center rounded-full text-white px-5 py-3 bg-bgNavbar cursor-pointer"
+                className="text-center rounded-full text-white px-5 py-3 bg-bgNavbar cursor-pointer font-MontserratMedium"
                 type="button"
               >
                 <span className="px-8">Login</span>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 import Logo from "../../assets/images/logo.png";
 import FaceBook from "../../assets/images/FB.png";
@@ -14,7 +15,13 @@ const Footer = () => {
         <div className="lg:flex lg:flex-row py-12 lg:items-center lg:justify-between lg:overflow-hidden gird grid-cols-2 gap-4 px-4 md:flex md:flex-row">
           {/* LOGO */}
           <div className="">
-            <img src={Logo} alt="scholarton_logo" className="cursor-pointer" />
+            <Link to="/">
+              <img
+                src={Logo}
+                alt="scholarton_logo"
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
 
           <div className="flex flex-row items-center justify-between space">
