@@ -28,9 +28,7 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-sky text-size">
               About
             </Link>
-            {/* <a href="#" className="hover:text-sky text-size">
-              How we work
-            </a> */}
+
             <Link to="/categories" className="hover:text-sky text-size">
               Categories
             </Link>
@@ -48,8 +46,6 @@ const Navbar = () => {
               Get Started
             </Link>
           </div>
-
-          {/* get started */}
         </div>
       </nav>
     </div>
