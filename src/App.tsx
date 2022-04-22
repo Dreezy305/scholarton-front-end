@@ -8,6 +8,8 @@ import Contact from "./screens/Get-in-Touch/Contact";
 import Blog from "./screens/Blog/Blog";
 import Signup from "./screens/Signup/Signup";
 import Login from "./screens/Login/Login";
+import Home from "./screens/Dashboard/Body/Home/Home";
+import Dashboard from "./screens/Dashboard";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Glass from "../../assets/images/glassbg.png";
 import "./login.css";
 
@@ -56,12 +57,14 @@ const Login = () => {
               />
             </div>
             <div className="mt-5 w-full">
-              <button
-                className="text-center rounded-full text-white px-5 py-3 bg-bgBlue cursor-pointer w-full font-MontserratMedium"
-                type="button"
-              >
-                Login
-              </button>
+              <Link to={"/dashboard"}>
+                <button
+                  className="text-center rounded-full text-white px-5 py-3 bg-bgBlue cursor-pointer w-full font-MontserratMedium"
+                  type="button"
+                >
+                  Login
+                </button>
+              </Link>
             </div>
           </form>
         </div>
