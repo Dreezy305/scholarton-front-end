@@ -5,15 +5,17 @@ const Login = () => {
   return (
     <section className="overflow-hidden h-screen">
       <div className="flex flex-col md:flex-row lg:flex-row overflow-hidden">
-        <img src={Glass} alt="glass" className="" />
-        <div className="items-center mx-auto overflow-hidden mt-24 w-2/4">
+        <img src={Glass} alt="glass" className="hidden md:hidden lg:block" />
+        <div className="items-center mx-auto overflow-hidden mt-24 md:w-full lg:w-2/4 w-full">
           <form className="flex flex-col space-y-8 items-center text-center px-12">
             <h4 className="text-black font-MontserratMedium font-medium text-2xl leading-6 text-center mx-auto">
               Welcome Back
             </h4>
 
             <div className="flex flex-col space-y-2 items-start w-full">
-              <label>Email</label>
+              <label className="font-MontserratRegular font-normal text-black text-lg leading-5">
+                Email
+              </label>
               <input
                 type={"email"}
                 value=""
@@ -30,7 +32,9 @@ const Login = () => {
             </div>
 
             <div className="flex flex-col space-y-2 items-start w-full">
-              <label>Password</label>
+              <label className="font-MontserratRegular font-normal text-black text-lg leading-5">
+                Password
+              </label>
               <input
                 type={"password"}
                 value=""
@@ -47,7 +51,7 @@ const Login = () => {
             </div>
             <div className="mt-5 w-full">
               <button
-                className="text-center rounded-full text-white px-5 py-3 bg-bgBlue cursor-pointer w-full"
+                className="text-center rounded-full text-white px-5 py-3 bg-bgBlue cursor-pointer w-full font-MontserratMedium"
                 type="button"
               >
                 Login
