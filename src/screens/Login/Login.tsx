@@ -1,13 +1,19 @@
 import React from "react";
 import Glass from "../../assets/images/glassbg.png";
+import "./login.css";
 
 const Login = () => {
   return (
-    <section className="overflow-hidden h-screen">
+    <section className="overflow-hidden h-screen" id="login">
       <div className="flex flex-col md:flex-row lg:flex-row overflow-hidden">
         <img src={Glass} alt="glass" className="hidden md:hidden lg:block" />
         <div className="items-center mx-auto overflow-hidden mt-24 md:w-full lg:w-2/4 w-full">
-          <form className="flex flex-col space-y-8 items-center text-center px-12">
+          <form
+            className="flex flex-col space-y-8 items-center text-center px-12"
+            id="form"
+            role={"form"}
+            onSubmit={(e) => e.preventDefault()}
+          >
             <h4 className="text-black font-MontserratMedium font-medium text-2xl leading-6 text-center mx-auto">
               Welcome Back
             </h4>

@@ -10,7 +10,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2">
           {/* LOGO */}
           <div className="">
-            <img src={Logo} alt="scholarton_logo" className="cursor-pointer" />
+            <Link to="/">
+              <img
+                src={Logo}
+                alt="scholarton_logo"
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* hamburger */}
