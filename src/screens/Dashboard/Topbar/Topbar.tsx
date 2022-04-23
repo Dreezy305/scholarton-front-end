@@ -12,7 +12,7 @@ const Topbar = ({ title }: TopbarProps) => {
       <h3 className="font-MontserratMedium font-semibold text-bgBlue text-2xl leading-6">
         {title || "Home Page"}
       </h3>
-      <Link to={"/"}>
+      <Link to={"/"} className="cursor-pointer">
         <img src={Logo} className="" alt="" />
       </Link>
     </div>

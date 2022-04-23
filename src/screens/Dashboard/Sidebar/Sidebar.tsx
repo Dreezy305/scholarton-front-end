@@ -72,7 +72,7 @@ const Sidebar = () => {
             </Link>
           </li>
 
-          <li className="cursor-pointer hover:bg-bgBlue  hover:rounded-tr-[20px] hover:rounded-br-[20px] hover:text-white hover:py-3 hover:px-2 hover:overflow-hidden font-MontserratMedium font-medium text-base leading-5 text-white flex flex-row space-x-5 items-center">
+          <li className="cursor-pointer  font-MontserratMedium font-medium text-base leading-5 text-white flex flex-row space-x-5 items-center">
             <MdLogout fontSize={23} />
             <span>Log Out</span>
           </li>
