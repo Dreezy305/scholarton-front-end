@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo.png";
 
 type TopbarProps = {
@@ -11,8 +12,9 @@ const Topbar = ({ title }: TopbarProps) => {
       <h3 className="font-MontserratMedium font-semibold text-bgBlue text-2xl leading-6">
         {title || "Home Page"}
       </h3>
-
-      <img src={Logo} className="" alt="" />
+      <Link to={"/"}>
+        <img src={Logo} className="" alt="" />
+      </Link>
     </div>
   );
 };
