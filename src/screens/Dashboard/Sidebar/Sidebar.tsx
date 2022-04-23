@@ -18,7 +18,7 @@ const Sidebar = () => {
       </div>
 
       <div className="mx-auto lg:text-left lg:px-14 lg:flex-col lg:items-center lg:py-7 lg:space-y-8">
-        <ul className="lg:py-7 lg:flex-col lg:space-y-8 lg:items-start">
+        <ul className="lg:py-7 lg:flex-col lg:space-y-8 lg:items-start lg:overflow-hidden">
           <li className="cursor-pointer hover:bg-bgBlue  hover:rounded-tr-[20px] hover:rounded-br-[20px]  hover:text-white hover:py-3 hover:px-2 font-MontserratMedium font-medium text-base leading-5 text-white flex flex-row space-x-5 items-center">
             <BiHomeAlt fontSize={23} />
             <span>Home Page</span>
