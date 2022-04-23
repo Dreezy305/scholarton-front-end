@@ -11,7 +11,7 @@ const Dashboard = ({ children }: DashboardProps) => {
   return (
     <section className="lg:flex flex-row">
       <Sidebar />
-      <Rightside />
+      <Rightside children={children} />
     </section>
   );
 };
