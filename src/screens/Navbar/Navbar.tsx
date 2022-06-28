@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="bg-bgNavbar">
       <nav className="container relative  mx-auto p-3">
@@ -21,10 +24,24 @@ const Navbar = () => {
 
           {/* hamburger */}
           <div className="md:hidden">
-            <GiHamburgerMenu fontSize={48} className="cursor-pointer" />
+            {open ? (
+              <AiOutlineClose
+                fontSize={48}
+                color={"#0369a1"}
+                className="cursor-pointer"
+                onClick={() => setOpen(!open)}
+              />
+            ) : (
+              <GiHamburgerMenu
+                fontSize={48}
+                color={"#0369a1"}
+                className="cursor-pointer"
+                onClick={() => setOpen(!open)}
+              />
+            )}
           </div>
           {/* MENU  */}
-          <div className="md:flex space-x-6 text-regularWhite font-medium font-MontserratMedium text-base leading-5 hidden items-center ">
+          <div className="md:flex space-x-6 text-regularWhite font-medium font-MontserratMedium text-base leading-5 hidden items-center">
             <Link to="/about" className="hover:text-sky text-size">
               About
             </Link>

@@ -15,7 +15,7 @@ const How = () => {
           How we work
         </h3>
         {/* STEPS */}
-        <div className="flex flex-col md:flex-row lg:flex-row items-center md:justify-between lg:justify-between pb-5 mb-5 bg-Img space-y-8 md:items-center lg:items-center md:px-10">
+        <div className="flex flex-col md:flex-row lg:flex-row lg:items-baseline md:justify-between lg:justify-between pb-5 mb-5 bg-Img space-y-8 md:items-center  md:px-10">
           <div className="flex flex-col text-center items-center  space-y-7 ">
             <div
               className="border border-skyBlue rounded-full flex items-center text-center justify-center px-6 py-6 h-28 w-28"

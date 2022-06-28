@@ -57,7 +57,7 @@ const Login = () => {
               />
             </div>
             <div className="mt-5 w-full">
-              <Link to={"/dashboard"}>
+              <Link to={"/dashboard/home"}>
                 <button
                   className="text-center rounded-full text-white px-5 py-3 bg-bgBlue cursor-pointer w-full font-MontserratMedium"
                   type="button"

@@ -5,13 +5,14 @@ import Rightside from "./Rightside/Rightside";
 
 type DashboardProps = {
   children?: React.ReactNode;
+  title?: string;
 };
 
-const Dashboard = ({ children }: DashboardProps) => {
+const Dashboard = ({ children, title }: DashboardProps) => {
   return (
     <section className="lg:flex flex-row">
       <Sidebar />
-      <Rightside children={children} />
+      <Rightside children={children} title={title} />
     </section>
   );
 };
